@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5361FF;
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin: .5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.brand-title a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.navbar-links {
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: cornflowerblue;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.20rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* The role of media query is that, it says if certain condition meet run the code of inside it, and if not then don't */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Now the hamburgur menu will be visible */
+    .toggle-button {
+        display: flex;
+    }
+
+    /* Now the links will disapper and */
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
