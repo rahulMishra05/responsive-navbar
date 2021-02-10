@@ -15,7 +15,7 @@ If you want to make some changes and customizie it, you can follow the commands 
     ```
 ### 🚀 Live Demo 
 
-If you want to see that how this reponsive navbar site looks like then [click here](https://rahulmishra05.github.io/responsive-navbar/#)
+If you want to see that how this reponsive navbar site looks like then [click here](https://responsive-navbar-rahul-mishra.netlify.app/)
 
 You can also find it on [CodePen](https://codepen.io/rahulMishra05/pen/WNxGWpO)
 
